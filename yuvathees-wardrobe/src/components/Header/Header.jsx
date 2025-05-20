@@ -3,9 +3,9 @@ import React from 'react';
 const Header = () => {
   return (
     <section>
-      <h2>About Page</h2>
+      <h2>Header</h2>
       {/* Placeholder content */}
-      <p>This is the About page of Yuvathees Wardrobe.</p>
+      <p>This is the Header of Yuvathees Wardrobe.</p>
     </section>
   );
 };

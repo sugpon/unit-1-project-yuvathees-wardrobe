@@ -3,9 +3,9 @@ import React from 'react';
 const ContactUs = () => {
   return (
     <section>
-      <h2>About Page</h2>
+      <h2>Contact Us</h2>
       {/* Placeholder content */}
-      <p>This is the About page of Yuvathees Wardrobe.</p>
+      <p>This is the Contact page of Yuvathees Wardrobe.</p>
     </section>
   );
 };

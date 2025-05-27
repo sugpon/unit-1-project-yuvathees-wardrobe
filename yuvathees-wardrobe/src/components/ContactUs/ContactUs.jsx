@@ -13,8 +13,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="contactSection">
-      <h2 className="heading">Write To  Us</h2>
+    <div className="contactSection">
       <form className="contactForm" noValidate>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -42,6 +41,6 @@ export default function ContactUs() {
 
         <button type="submit" className="submitBtn">Send Message</button>
       </form>
-    </section>
+    </div>
   );
 }

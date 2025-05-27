@@ -1,76 +1,64 @@
-/* Container for contact section */
 .contactSection {
-  max-width: 800px; /* keep it neat and centered */
-  margin: 2rem auto; /* vertical spacing + center horizontally */
-  padding: 2rem 1rem;  /* padding around content */
-  border-radius: 8px;/* subtle rounded corners */
-  box-sizing: border-box;
-}
-
-/* Form styling */
-.contactForm {
+  padding: 2rem;
   display: flex;
-  flex-direction: column;        /* stack fields vertically */
-  gap: 1rem;                   /* spacing between inputs */
+  justify-content: center; /* horizontally center the form */
 }
 
-/* Label styling */
+.contactForm {
+  background-color: rgb(241, 235, 195);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* control width */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 .contactForm label {
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #333;
 }
 
-/* Input and textarea styling */
 .contactForm input,
 .contactForm textarea {
-  padding: 0.6rem 0.8rem;
-  font-size: 1rem;
-  border: 1px solid goldenrod;  /* goldenrod border to match theme */
+  padding: 0.75rem;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: black;       /* transparent-ish */
-  color: goldenrod;
-  outline: none;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
+  font-size: 1rem;
+  font-family: inherit;
 }
 
-/* Focus effect on inputs */
 .contactForm input:focus,
 .contactForm textarea:focus {
-  border-color: rgb(255, 0, 157); /* bright pink on focus */
+  outline: none;
+  border-color: goldenrod;
+  box-shadow: 0 0 5px goldenrod;
 }
 
-/* Character counter styling */
 .charCounter {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: goldenrod;
   text-align: right;
-  margin-top: -1rem;   /* pull it up closer to textarea */
-  margin-bottom: 1rem; /* space below counter */
+  margin-bottom: 1rem;
   font-style: italic;
 }
 
-/* Submit button */
 .submitBtn {
-  font-weight: 700;
-  font-size: 1.1rem;
-  padding: 0.8rem;
+  background-color: goldenrod;
+  color: white;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 1rem;
+  font-weight: bold;
 }
 
-/* Button hover */
 .submitBtn:hover {
-  background-color: rgb(255, 0, 157);
-  color: white;
-}
-
-/* Responsive tweaks */
-@media (max-width: 600px) {
-  .contactSection {
-    padding: 1rem;
-  }
+  background-color: black;
+  color: goldenrod;
 }

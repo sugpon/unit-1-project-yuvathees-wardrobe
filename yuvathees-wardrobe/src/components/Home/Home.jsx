@@ -29,6 +29,7 @@ const images = [
   "/images/Animation25.jpg",
   "/images/Animation26.jpg",
   "/images/Animation27.jpg",
+  "/images/Animation28.jpg",
 ];
 
 export default function Home() {
@@ -47,7 +48,6 @@ export default function Home() {
   return (
     <section className="homeSection">
       <div className="leftSide">
-        <h3>Look Book</h3>
         <div className="slideshowContainer">
           {images.map((src, index) => (
             <img
@@ -58,7 +58,7 @@ export default function Home() {
                 index === currentIndex ? "active" : "inactive"
               }`}
             />
-          ))};
+          ))}
         </div>
         </div>
 
@@ -82,7 +82,7 @@ export default function Home() {
 
         <p>
           The fashion industry has embraced this journey, offering designs that blend 
-          <strong>heritage with innovation</strong>. Still, the soul of each garment lives in the hands of 
+          <strong> heritage with innovation</strong>. Still, the soul of each garment lives in the hands of 
           <strong> local weavers</strong>, who carry forward generations of skill, tradition, and storytelling.
         </p>
 

@@ -1,32 +1,49 @@
 /* Footer container styles */
 .footer-container {
-  background-color: black; /* Footer background */
-  height: 100px; /* Fixed height */
   padding: 2rem; /* Padding */
   display: flex; /* Flexbox for layout */
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center horizontally */
   justify-content: center; /* Center vertically */
   text-align: center; /* Text center */
-  color: goldenrod; /* Text color */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font */
 }
 
-/* Footer title */
+
 .footer-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.1rem;
 }
 
-/* Footer years text */
+
 .footer-years {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
 
-/* Social icons styling */
+
 .social-icons a {
   font-size: 1.8rem;
   margin: 0 1rem;
+}
+
+/* Responsive footer styles for mobile screens */
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .social-icons a {
+    font-size: 1.4rem;
+    margin: 0 0.5rem;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-years {
+    font-size: 0.6rem;
+  }
 }

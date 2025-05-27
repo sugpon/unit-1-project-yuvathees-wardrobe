@@ -10,11 +10,10 @@ function Footer() {
               <a href="https://instagram.com/yuvatheeswardrobe" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
               <a href="https://facebook.com/yuvatheeswardrobe" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
               <a href="https://wa.me/919655863110" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-        </div>
-        <h2 className="footer-title">YUVATHEES WARDROBE</h2>
+            </div>
+          <h2 className="footer-title">YUVATHEES WARDROBE</h2>
           <p className="footer-years">© 2021 - 2025 Yuvathees Wardrobe. All rights reserved.</p>
-      
-      </div>
+        </div>
     </footer>
   );
 }

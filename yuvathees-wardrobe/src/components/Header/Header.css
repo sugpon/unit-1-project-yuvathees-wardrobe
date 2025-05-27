@@ -1,39 +1,51 @@
 /* Header container styles */
 .header-container {
-  background-color: black; /* Header background */
-  height: 160px; /* Fixed height */
-  padding: 2rem; /* Padding around content */
   display: flex;
+  padding: 0.5rem 2rem;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  justify-content:flex-start;
   text-align: center; /* Text center */
-  color: goldenrod; /* Text color */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font */
+}
+
+.header-logo {
+  margin: 0;
+  padding:0;
+  line-height: 0;
+  margin-bottom: 0.2rem;
 }
 
 /* Logo image sizing */
-.header-logo img {
-  height: 170px;
-  width: 180px;
+.header-logo img{
+  height: 18rem;
+  width:auto;
+  display: block; /* Center image */
+  filter: drop-shadow(0 0 10px goldenrod);
+  max-width: 100%;
+  object-fit:contain;
 }
 
 /* Row that contains nav and socials */
 .header-2 {
-  width: 100%;
+  margin-top: 0;
   display: flex;
-  justify-content:center; /* Center horizontally */
+  justify-content:stretch; /* Center horizontally */
 }
 
 /* Nav links container */
 .nav-links {
-  display: flex; /* Inline nav links */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 2.5rem; /* Space between nav links */
+  justify-content: center;
+  
 }
 
 /* Individual nav link styling */
 .nav-links a {
-  margin-right: 1.5rem;
-  font-size: 1.4rem;
+  margin-right: 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* Social icons container */

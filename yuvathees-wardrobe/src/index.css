@@ -1,6 +1,5 @@
 /* Global styles for MVP - base font, colors, margins, padding */
 
-/* Use Trebuchet font family globally for consistency */
 body, html {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
@@ -12,11 +11,10 @@ body, html {
 }
 
 h2 {
-  font-size: 0.1rem;       /* You can tweak this size as needed */
-  margin-bottom: 1rem;      /* Space below */
+  font-size: 1.5rem;        
+  margin-bottom: 1rem;
 }
 
-/* Links styled globally with hover effect */
 a {
   color: goldenrod; /* Link color */
   text-decoration: none; /* Remove underline */
@@ -29,6 +27,10 @@ a:hover {
   color: rgb(255, 0, 157); /* Hover color */
 }
 
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in element width/height */
+}
+
 /* Consistent padding and margin for all sections */
 section, div {
   padding: 1rem 2rem; /* Vertical and horizontal padding */
@@ -39,6 +41,6 @@ section, div {
 /* Responsive basics: prevent overflow on small screens */
 @media (max-width: 600px) {
   section, div {
-    padding: 1rem;
+    padding: 1rem; /* Reduce padding on small screens */
   }
 }

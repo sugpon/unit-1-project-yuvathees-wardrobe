@@ -1,0 +1,44 @@
+/* Global styles for MVP - base font, colors, margins, padding */
+
+/* Use Trebuchet font family globally for consistency */
+body, html {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element width/height */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font family */
+  font-size: 1rem; /* Base font size */
+  background-color: black; /* Page background color */
+  color: goldenrod; /* Default text color */
+}
+
+h2 {
+  font-size: 0.1rem;       /* You can tweak this size as needed */
+  margin-bottom: 1rem;      /* Space below */
+}
+
+/* Links styled globally with hover effect */
+a {
+  color: goldenrod; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 400; /* Slightly bold */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for links */
+a:hover {
+  color: rgb(255, 0, 157); /* Hover color */
+}
+
+/* Consistent padding and margin for all sections */
+section, div {
+  padding: 1rem 2rem; /* Vertical and horizontal padding */
+  margin: 0 auto; /* Center content horizontally */
+  max-width: 100rem; /* Max width for layout consistency */
+}
+
+/* Responsive basics: prevent overflow on small screens */
+@media (max-width: 600px) {
+  section, div {
+    padding: 1rem;
+  }
+}

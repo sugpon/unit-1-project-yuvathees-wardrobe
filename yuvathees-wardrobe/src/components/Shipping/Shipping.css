@@ -1,0 +1,63 @@
+.shipping-calculator {
+  max-width: 450px;                
+  margin: 2rem auto;/* Center horizontally + spacing from top */
+  padding: 2rem;/* Breathing room inside the box */
+  background-color: black;/* White background */
+  border: 1px solid #ccc;          /* Light gray border for definition */
+  border-radius: 8px;              /* Soft rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  display: flex;
+  flex-direction: column;         /* Stack children vertically */
+  gap: 1rem;                      /* Uniform spacing between elements */
+  color: goldenrod;
+}
+
+/* Heading */
+.shipping-calculator h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: goldenrod;
+}
+
+/* Labels */
+.shipping-calculator label {
+  font-weight: bold;
+}
+
+/* Input & Select fields */
+.shipping-calculator select,
+.shipping-calculator input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Checkbox label */
+.shipping-calculator label[for="jewelry"] {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Button */
+.shipping-calculator button {
+  padding: 0.75rem;
+  background-color: goldenrod;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.shipping-calculator button:hover {
+  background-color: #daa520;
+}
+
+/* Result message */
+.shipping-calculator p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,76 @@
+/* Container for contact section */
+.contactSection {
+  max-width: 800px; /* keep it neat and centered */
+  margin: 2rem auto; /* vertical spacing + center horizontally */
+  padding: 2rem 1rem;  /* padding around content */
+  border-radius: 8px;/* subtle rounded corners */
+  box-sizing: border-box;
+}
+
+/* Form styling */
+.contactForm {
+  display: flex;
+  flex-direction: column;        /* stack fields vertically */
+  gap: 1rem;                   /* spacing between inputs */
+}
+
+/* Label styling */
+.contactForm label {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Input and textarea styling */
+.contactForm input,
+.contactForm textarea {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid goldenrod;  /* goldenrod border to match theme */
+  border-radius: 5px;
+  background-color: black;       /* transparent-ish */
+  color: goldenrod;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect on inputs */
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: rgb(255, 0, 157); /* bright pink on focus */
+}
+
+/* Character counter styling */
+.charCounter {
+  font-size: 0.9rem;
+  text-align: right;
+  margin-top: -1rem;   /* pull it up closer to textarea */
+  margin-bottom: 1rem; /* space below counter */
+  font-style: italic;
+}
+
+/* Submit button */
+.submitBtn {
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+/* Button hover */
+.submitBtn:hover {
+  background-color: rgb(255, 0, 157);
+  color: white;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .contactSection {
+    padding: 1rem;
+  }
+}

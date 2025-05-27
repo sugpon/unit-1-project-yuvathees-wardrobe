@@ -1,0 +1,43 @@
+/* Header container styles */
+.header-container {
+  background-color: black; /* Header background */
+  height: 160px; /* Fixed height */
+  padding: 2rem; /* Padding around content */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Text center */
+  color: goldenrod; /* Text color */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font */
+}
+
+/* Logo image sizing */
+.header-logo img {
+  height: 170px;
+  width: 180px;
+}
+
+/* Row that contains nav and socials */
+.header-2 {
+  width: 100%;
+  display: flex;
+  justify-content:center; /* Center horizontally */
+}
+
+/* Nav links container */
+.nav-links {
+  display: flex; /* Inline nav links */
+}
+
+/* Individual nav link styling */
+.nav-links a {
+  margin-right: 1.5rem;
+  font-size: 1.4rem;
+}
+
+/* Social icons container */
+.header-socials a {
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+}

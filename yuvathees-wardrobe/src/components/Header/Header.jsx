@@ -1,13 +1,22 @@
-import React from 'react';
+import './Header.css';
 
-const Header = () => {
+function Header() {
   return (
-    <section>
-      <h2>Header</h2>
-      {/* Placeholder content */}
-      <p>This is the Header of Yuvathees Wardrobe.</p>
-    </section>
+    <header className="header-container">
+      <div className="header-logo">
+        <img src="/images/yuvatheesfull.png" alt="Yuvathees Wardrobe Logo" />
+      </div>
+      <div className = "header-2">
+        <nav className="nav-links">
+          <a href="/">Home</a>
+          <a href="/aboutus">About Us</a>
+          <a href="/services">Services</a>
+          <a href="/shipping">Shipping</a>
+          <a href="/contactus">Contact Us</a>
+        </nav>
+      </div>
+    </header>
   );
-};
+}
 
 export default Header;

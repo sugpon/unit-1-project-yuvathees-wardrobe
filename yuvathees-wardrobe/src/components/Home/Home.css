@@ -1,0 +1,111 @@
+.homeSection {
+  display: flex;
+  max-width: 100rem;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.leftSide {
+  flex: 1;
+  max-width: 400px;
+  min-width: 300px;
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.rightSide {
+  flex: 1;            /* match left side's flex */
+  max-width: 450px;   /* similar width to left side */
+  min-width: 400px;   /* close to left side's min width */
+  height: auto;       /* allow height to grow */
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.slideshowContainer {
+  position: relative;
+  width: 350px;
+  height: 550px;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slideshowContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 550px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  transform-origin: center center;
+  /* Reset transform so zoom is applied only when active */
+  transform: scale(1);
+}
+
+.slideshowContainer img.active {
+  opacity: 1;
+  animation: zoomIn 5s forwards;
+}
+
+.slideshowContainer img.inactive {
+  opacity: 0;
+}
+
+/* Zoom in animation for active image */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Headings */
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* Subheadings */
+.subheading {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* Call to action text */
+.cta {
+  margin-top: 1.8rem;
+  font-size: 1.15rem;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .homeSection {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .leftSide,
+  .rightSide {
+    max-width: 100%;
+    min-width: auto;
+  }
+}

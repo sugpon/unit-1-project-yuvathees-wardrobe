@@ -1,0 +1,19 @@
+.services-container {
+  max-width: 800px;       /* keeps content readable and nicely centered */
+  margin: 2rem auto;      /* vertical spacing + center horizontally */
+  padding: 0 1rem;        /* some horizontal padding on small screens */
+  font-family: inherit;
+  color: inherit;
+  line-height: 1.6;       /* good spacing between lines */
+}
+
+.services-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
+}
+
+.services-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+}

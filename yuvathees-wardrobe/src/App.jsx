@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import{ BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/NavBar/NavBar'
+import{ BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import AboutUs from './components/AboutUs/AboutUs'
 import Services from './components/Services/Services'
@@ -8,13 +7,14 @@ import Shipping from './components/Shipping/Shipping'
 import ContactUs from './components/ContactUs/ContactUs'
 import Footer from './components/Footer/Footer'
 import './App.css'
+import './index.css'
 
 function App() {
   
   return (
     <div className="App">
       <Router>
-        <Navbar />
+      <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
@@ -25,7 +25,7 @@ function App() {
         <Footer />
       </Router>
     </div>
-  )
+  );
 }
 
 export default App

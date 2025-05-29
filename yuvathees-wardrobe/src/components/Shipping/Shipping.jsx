@@ -8,11 +8,13 @@ const Shipping = () => {
   const [weight, setWeight] = useState("");
   const [isJewelry, setIsJewelry] = useState(false);
   const [message, setMessage] = useState("");
+  const [validationError, setValidationError] = useState("");
 
   const handleCountrySelect = (e) => {
     const selected = e.target.value;
     setSelectedCountry(selected);
     setMessage("");
+    setValidationError("");
 
     if (selected === "India") {
       setMessage(shippingData.India.message);
@@ -24,16 +26,21 @@ const Shipping = () => {
   const handleWeightCalculator = (e) => {
     setWeight(e.target.value);
     setMessage("");
+    setValidationError("");
   };
 
   const isJewelryIncluded = (e) => {
     setIsJewelry(e.target.checked);
     setMessage("");
+    setValidationError("");
   };
 
   const calculateShipping = () => {
+    setMessage("");
+    setValidationError("");
+
     if (!selectedCountry) {
-      alert("Please select a country first.");
+      setValidationError("Please select a country first.");
       return;
     }
 
@@ -44,7 +51,7 @@ const Shipping = () => {
 
     const weightNum = parseFloat(weight);
     if (isNaN(weightNum) || weightNum <= 0) {
-      alert("Please enter a valid shipping weight in kilograms.");
+      setValidationError("Please enter a valid shipping weight in kilograms.");
       return;
     }
 

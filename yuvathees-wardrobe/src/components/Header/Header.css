@@ -5,7 +5,7 @@
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center horizontally */
   justify-content:flex-start;
-  text-align: center; /* Text center */
+  text-align: center;
 }
 
 .header-logo {
@@ -27,9 +27,10 @@
 
 /* Row that contains nav and socials */
 .header-2 {
-  margin-top: 0;
+  margin-top: 0.5rem;
   display: flex;
   justify-content:stretch; /* Center horizontally */
+  width: 100%; /* Full width */
 }
 
 /* Nav links container */
@@ -38,7 +39,6 @@
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
   gap: 2.5rem; /* Space between nav links */
   justify-content: center;
-  
 }
 
 /* Individual nav link styling */
@@ -48,8 +48,15 @@
   font-weight: bold;
 }
 
-/* Social icons container */
-.header-socials a {
-  font-size: 1.7rem;
-  margin-left: 1.5rem;
+/* Small screen responsive styles */
+@media (max-width: 600px) { 
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+  .nav-links {
+    gap: 1.5rem;
+  }
+  .nav-links a {
+    font-size: 1.2rem;
+  }
 }

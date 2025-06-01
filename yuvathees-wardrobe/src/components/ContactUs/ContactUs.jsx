@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
+import Button from "../Button/Button.jsx";
 
 export default function ContactUs() {
   const [message, setMessage] = useState("");
@@ -39,7 +40,11 @@ export default function ContactUs() {
           {message.length} / {maxChars}
         </div>
 
-        <button type="submit" className="submitBtn">Send Message</button>
+       <Button
+        label="Send Message"
+        type="submit"
+      />
+
       </form>
     </div>
   );

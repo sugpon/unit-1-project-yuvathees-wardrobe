@@ -53,7 +53,7 @@ export default function Home() {
             <img
               key={index}
               src={src}
-              alt={`yw${index + 1}`}
+              alt={`Catalogue ${index + 1}`}
               className={`slideImage ${
                 index === currentIndex ? "active" : "inactive"
               }`}

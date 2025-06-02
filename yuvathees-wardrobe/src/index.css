@@ -39,8 +39,8 @@ section, div {
   max-width: 100rem; /* Max width for layout consistency */
 }
 
-/* Tablet / Small laptops: Adjust spacing and font sizing */
-@media (max-width: 1024px) {
+/* Tablets / Small laptops: Adjust spacing and font sizing */
+@media (max-width: 900px) {
   body, html {
     font-size: 0.95rem; /* Slightly reduce base font size */
   }
@@ -70,7 +70,7 @@ section, div {
   }
 
   a {
-    display: inline-block; /* Helpful if links are stacked */
+    display: inline-block;
     word-break: break-word;
   }
 }

@@ -125,9 +125,9 @@
 /* Responsive styling for mobile screens */
 @media (max-width: 600px) {
   .shipping-calculator {
-    max-width: 320px;             /* Narrower on small screens */
+    max-width: 320px;/* Narrower on small screens */
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .shipping-calculator h1 {

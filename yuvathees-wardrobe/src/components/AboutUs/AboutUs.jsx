@@ -24,7 +24,7 @@ const AboutUs = () => {
         </p>
 
         <p>
-          Yuvathees Wardrobe is committed to quality, authenticity, and relationships. We don’t do fast fashion. We don’t do replicas. Every item we offer is selected with care, ensuring it meets the standards we set for our own family—because for us, that’s where it all began.
+          Yuvathees Wardrobe is committed to quality, authenticity, and relationships. We don’t do fast fashion. We don’t do replicas. Every item we offer is selected with care, ensuring it meets the standards we set for our own family, because for us, that’s where it all began.
         </p>
       </section>
     </div>

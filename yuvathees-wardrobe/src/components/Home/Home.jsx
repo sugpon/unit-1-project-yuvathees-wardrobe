@@ -39,11 +39,12 @@ export default function Home() {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000 );
+      ); // Reset to first image after last
+      // This ensures the slideshow loops continuously
+    }, 3000 );  // Change image every 3 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); // Cleanup interval on component unmount
 
   return (
     <section className="homeSection">
@@ -65,7 +66,7 @@ export default function Home() {
       <div className="rightSide">
         <h2 className="heading">Why Yuvathees Wardrobe?</h2>
         <p className="subheading">
-          <em>A journey through India’s rich textile heritage, straight from the House of Weavers.</em>
+          <em>A Journey Through India’s Rich Textile Heritage, Straight From The House Of Weavers.</em>
         </p>
 
         <p>From Kashmir to Kanyakumari, every corner of India tells a story through its fabric.</p>

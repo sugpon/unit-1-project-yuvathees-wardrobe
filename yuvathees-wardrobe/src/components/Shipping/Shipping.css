@@ -1,157 +1,135 @@
+/* Container for entire shipping section */
 .shipping-container {
   display: flex;
-  flex-direction: column;     /* stack vertically */
-  align-items: center;        /* horizontal centering */
-  justify-content: center;    /* vertical centering if needed */
-  padding: 2rem;
-  font-size: 1.15rem;         /* increased base font size */
-  line-height: 1.6;           /* improved line spacing */
+  flex-direction: column;     /* Stack children vertically */
+  align-items: center;        /* Center horizontally */
+  justify-content: center;    /* Center vertically if needed */
+  padding: 2rem;              /* Outer padding */
 }
 
+/* Main calculator box */
 .shipping-calculator {
-  max-width: 450px;                
-  margin: 2rem auto;           /* center horizontally + spacing from top */
-  padding: 2rem;               /* breathing room inside the box */
-  background-color: black;     /* keep black background */
-  border: 1px solid #ccc;      /* light gray border for definition */
-  border-radius: 8px;          /* soft rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  max-width: 450px;                /* Max width for desktop */
+  margin: 2rem auto;               /* Center horizontally with vertical spacing */
+  padding: 2rem;                   /* Inner spacing */
+  background-color: black;         /* Black background to match site */
+  border: 1px solid goldenrod;    /* Goldenrod border for style & visibility */
+  border-radius: 8px;              /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(218, 165, 32, 0.3); /* Soft goldenrod shadow */
   display: flex;
-  flex-direction: column;      /* stack children vertically */
-  gap: 1rem;                  /* uniform spacing between elements */
-  color: goldenrod;           /* goldenrod text */
-  font-size: 1.15rem;         /* bigger font size inside box */
+  flex-direction: column;         /* Stack inputs vertically */
+  gap: 1rem;                      /* Uniform spacing between elements */
+  color: goldenrod;               /* Goldenrod text for contrast */
 }
 
-/* Heading */
+/* Heading inside shipping calculator */
 .shipping-calculator h1 {
-  text-align: center;
-  font-size: 1.8rem;           /* increased heading font size */
-  color: goldenrod;
+  text-align: center;     /* Center heading text */
+  font-size: 1.5rem;     /* Readable font size */
+  color: goldenrod;      /* Consistent brand color */
+  font-weight: bold;
 }
 
-/* Labels */
+/* Labels for inputs and selects */
 .shipping-calculator label {
   font-weight: bold;
-  font-size: 1.1rem;           /* increased label font size */
+  color: goldenrod;      /* Goldenrod labels */
 }
 
-/* Input & Select fields */
+/* Styling for input and select fields */
 .shipping-calculator select,
 .shipping-calculator input {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1.1rem;           /* increased input/select font size */
-  color: goldenrod;
-  background-color: black;     /* keep consistent background */
+  padding: 0.5rem;                 /* Comfortable padding */
+  border: 1px solid goldenrod;    /* Matching border color */
+  border-radius: 4px;              /* Rounded input corners */
+  background-color: black;         /* Black background */
+  color: goldenrod;                /* Text color */
+  font-size: 1rem;                 /* Consistent font size */
 }
 
-/* Checkbox label */
+/* Checkbox label with spacing */
 .shipping-calculator label[for="jewelry"] {
-  font-weight: normal;
+  font-weight: normal;             /* Normal weight for checkbox label */
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1.1rem;           /* same font size for checkbox label */
+  gap: 0.5rem;                    /* Space between checkbox and text */
+  color: goldenrod;
 }
 
-/* Result message */
+/* Result text styling */
 .shipping-calculator p {
   text-align: center;
   font-weight: bold;
   margin-top: 0.5rem;
-  font-size: 1.2rem;           /* bigger font for result message */
-}
-
-.validation-error {
-  color: #ff4d4d;              /* bright red */
-  font-weight: bold;
-  margin-top: -0.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
   font-size: 1.1rem;
+  color: goldenrod;
 }
 
+/* Validation error message - forced bright red with !important
+  Using !important here to ensure the validation error styles 
+  (color, font-weight, spacing) override any conflicting global or browser styles.
+  This guarantees error messages remain clearly visible and consistently styled 
+  across all devices and themes.
+*/
+.validation-error {
+  color: #ff4d4d !important;      /* Bright red for errors */
+  font-weight: bold !important;
+  margin-top: -0.5rem !important;
+  margin-bottom: 1rem !important;
+  text-align: center !important;
+  font-size: 1rem !important;
+  background-color: transparent !important; /* Ensure no background override */
+}
+
+/* Shipping rates table styles */
 .shipping-rates-table table {
   border-collapse: collapse;
-  width: 80%;
-  margin: 1.5rem 0;
-  font-size: 1.1rem;           /* increased font size for table */
-  border: 1px solid #ccc;      /* outer border */
+  width: 80%;                     /* Width to fit nicely in container */
+  margin: 1.5rem 0;               /* Vertical spacing */
+  font-size: 0.95rem;
+  border: 1px solid goldenrod;    /* Goldenrod border for table */
   text-align: left;
+  color: goldenrod;
 }
 
 .shipping-rates-table th,
 .shipping-rates-table td {
-  border: 1px solid #ccc;      /* cell borders */
+  border: 1px solid goldenrod;    /* Cell borders */
   padding: 1rem 1rem;
 }
 
-/*Media Queries for Responsiveness */
+/* Responsive styling for tablets & small desktops */
 @media (max-width: 900px) {
-  .shipping-container {
-    padding: 1.5rem;
-    font-size: 1rem;  /* slightly smaller font on smaller screens */
-  }
-
   .shipping-calculator {
-    max-width: 90%;
+    max-width: 400px;             /* Slightly narrower */
     padding: 1.5rem;
-    font-size: 1rem;  /* scale down font inside box */
+    font-size: 1rem;
   }
 
   .shipping-calculator h1 {
-    font-size: 1.5rem;  /* smaller heading */
-  }
-
-  .shipping-calculator label,
-  .shipping-calculator select,
-  .shipping-calculator input,
-  .shipping-calculator label[for="jewelry"],
-  .validation-error {
-    font-size: 1rem;   /* consistent smaller fonts */
-  }
-
-  .shipping-calculator p {
-    font-size: 1.1rem; /* slightly smaller message font */
+    font-size: 1.3rem;
   }
 
   .shipping-rates-table table {
-    width: 100%;        /* full width table on small screens */
-    font-size: 1rem;    /* smaller font for table */
+    width: 90%;
+    font-size: 0.9rem;
   }
 }
 
+/* Responsive styling for mobile screens */
 @media (max-width: 600px) {
-  .shipping-container {
-    padding: 1rem;
-    font-size: 0.9rem;  /* smaller base font */
-  }
-
   .shipping-calculator {
-    max-width: 100%;
+    max-width: 320px;             /* Narrower on small screens */
     padding: 1rem;
     font-size: 0.9rem;
   }
 
   .shipping-calculator h1 {
-    font-size: 1.3rem;  /* smaller heading */
-  }
-
-  .shipping-calculator label,
-  .shipping-calculator select,
-  .shipping-calculator input,
-  .shipping-calculator label[for="jewelry"],
-  .validation-error {
-    font-size: 0.9rem;   /* scale inputs and labels down */
-  }
-
-  .shipping-calculator p {
-    font-size: 1rem;     /* result message smaller */
+    font-size: 1.1rem;
   }
 
   .shipping-rates-table table {
-    font-size: 0.9rem;   /* smaller table font */
+    width: 100%;
+    font-size: 0.85rem;
   }
 }

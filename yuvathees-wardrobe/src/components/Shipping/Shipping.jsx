@@ -78,12 +78,12 @@ const Shipping = () => {
         <ul>
           <li>🚚 <strong>Free shipping</strong> across India — no matter the quantity or weight!</li>
           <li>🌏 Use the calculator below for knowing your customized international shipping rates.</li>
-          <li>⚠️ Orders over 10 kgs require <em>custom quotes</em> — 👉<Link to="/contact-us">Contact Us</Link>👈.</li>
+          <li>⚠️ Orders over 10 kgs require <em>custom quotes</em> — 👉<Link to="/ContactUs">Contact Us</Link>👈.</li>
           <li>💎 Jewelry orders incur an additional customs surcharge.</li>
           <li>⚖️ Weight is rounded <strong>up</strong> to the nearest kg as per the standard carrier shipping policies</li>
           <li>🏙️ St. Louis customers: in-person pickups will get extra discounts on shipping rates</li>
           <li>🕒 Shipping due at dispatch (monthly or biweekly).</li>
-          <li>📲 Questions? Reach us via WhatsApp or 👉<Link to="/contact-us">Contact Us</Link>👈.</li>
+          <li>📲 Questions? Reach us via WhatsApp or 👉<Link to="/ContactUs">Contact Us</Link>👈.</li>
         </ul>
 
          {/* Shipping Rates Table */}

@@ -4,6 +4,7 @@ import Button from "../Button/Button.jsx";
 
 export default function ContactUs() {
   const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
   const maxChars = 200;
 
   // Handle textarea input change
@@ -15,7 +16,14 @@ export default function ContactUs() {
 
   return (
     <div className="contactSection">
-      <form className="contactForm" noValidate>
+      <form className="contactForm" 
+        onSubmit={(e) => {
+          e.preventDefault();
+          setSubmitted(true);
+          setMessage("");
+          e.target.reset();
+        }}
+      noValidate>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required />
 
@@ -44,7 +52,9 @@ export default function ContactUs() {
         label="Send Message"
         type="submit"
       />
-
+      {submitted && (
+      <p className="thankYouMessage">Thank you! We'll get back to you soon.</p>
+)}
       </form>
     </div>
   );

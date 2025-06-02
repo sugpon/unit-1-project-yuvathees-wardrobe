@@ -56,22 +56,12 @@
   font-style: italic;
 }
 
-.submitBtn {
-  background-color: goldenrod; /* Goldenrod background for submit button */
-  color: black; /* Black text on button for contrast */
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 6px; /* Rounded button corners */
-  font-size: 1rem;
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth color transition */
-  font-weight: bold;
+.thankYouMessage {
+  margin-top: 1rem;
+  color: green;
+  font-weight: 500;
 }
 
-.submitBtn:hover {
-  background-color: black; /* Invert colors on hover */
-  color: goldenrod;
-}
 
 /* Media query for tablets and smaller desktops */
 @media (max-width: 900px) {

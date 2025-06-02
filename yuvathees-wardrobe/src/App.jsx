@@ -1,4 +1,4 @@
-import{ BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import{ BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import AboutUs from './components/AboutUs/AboutUs'
@@ -13,7 +13,7 @@ function App() {
   
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
         </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }

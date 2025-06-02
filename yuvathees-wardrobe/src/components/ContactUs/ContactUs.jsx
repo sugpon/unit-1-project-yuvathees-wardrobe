@@ -23,6 +23,7 @@ export default function ContactUs() {
           setMessage("");
           e.target.reset();
         }}>
+        <h2>Contact Us</h2>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required />
 

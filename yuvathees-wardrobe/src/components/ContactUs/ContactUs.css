@@ -4,6 +4,11 @@
   justify-content: center; /* Center the form horizontally */
 }
 
+.contactSection h2 {
+  font-size: 2rem; /* Larger font size for visibility */
+  margin-bottom: 1.5rem; /* Space below the heading */
+}
+
 .contactForm {
   background-color: black; /* Black background to match site theme */
   padding: 3rem; /* Spacious padding inside the form */
@@ -14,13 +19,11 @@
   display: flex;
   flex-direction: column; /* Stack form elements vertically */
   gap: 1rem; /* Even spacing between elements */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: goldenrod; /* Goldenrod text color for all content */
 }
 
 .contactForm label {
   font-weight: bold;
-  color: goldenrod; /* Labels in goldenrod for consistent branding */
+  font-size: 1.05rem; /* Consistent font size for labels */
 }
 
 .contactForm input,
@@ -28,7 +31,7 @@
   padding: 0.75rem;
   border: 1px solid goldenrod; /* Goldenrod border to match theme */
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-family: inherit; /* Inherit font family from parent */
   background-color: black; /* Inputs have black background */
   color: goldenrod; /* Goldenrod text inside inputs */
@@ -39,13 +42,6 @@
   outline: none;
   border-color: goldenrod; /* Highlight border on focus */
   box-shadow: 0 0 5px goldenrod; /* Glow effect on focus */
-}
-
-/* Autofill override to keep black background and goldenrod text */
-.contactForm input:-webkit-autofill,
-.contactForm textarea:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px black inset !important;
-  -webkit-text-fill-color: goldenrod !important;
 }
 
 .charCounter {
@@ -61,7 +57,6 @@
   color: green;
   font-weight: 500;
 }
-
 
 /* Media query for tablets and smaller desktops */
 @media (max-width: 900px) {

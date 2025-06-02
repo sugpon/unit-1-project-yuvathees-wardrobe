@@ -4,6 +4,7 @@ import "./Services.css";
 const Services = () => {
   return (
     <div className="services-container">
+      <h2>Services Provided</h2>
       <p>
         At Yuvathees we are focussed on bringing quality yet affordable Indian wardrobe essentials 
         to your door step irrespective of wherever you are around the globe. Just to keep the affordability point, 

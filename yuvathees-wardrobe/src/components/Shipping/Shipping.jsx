@@ -74,7 +74,7 @@ const Shipping = () => {
   return (
     <section>
     <div className="shipping-container">
-        <h2>🚚✈️🌏 Shipping Information 🌏✈️🚚</h2>
+        <h2>Shipping Information 🚚</h2>
         <ul>
           <li>🚚 <strong>Free shipping</strong> across India — no matter the quantity or weight!</li>
           <li>🌏 Use the calculator below for knowing your customized international shipping rates.</li>

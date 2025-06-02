@@ -91,7 +91,7 @@ export default function Home() {
           every piece stays true to its roots while supporting the artisans who keep these traditions alive.
         </p>
 
-        <p className="cta">
+        <p>
           So how do you bring authentic treasures from the House of Weavers into your wardrobe?<br />
           We are the answer!
         </p>

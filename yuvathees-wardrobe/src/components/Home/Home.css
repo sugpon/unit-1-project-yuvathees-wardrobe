@@ -32,14 +32,12 @@
 }
 
 .slideImage {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+  border-radius: 10px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 350px;
-  height: 550px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   opacity: 0;
   transition: opacity 2s ease-in-out, transform 5s ease-in-out; /* Added transform for zoom effect */
@@ -49,8 +47,8 @@
 .slideshowContainer {
   margin-top: 5.5rem; 
   position: relative;
-  width: 450px;
-  height: 650px;
+  width: 360px;
+  height: 520px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -92,22 +90,70 @@
   font-style: italic;
 }
 
-/* Call to action text */
-.cta {
-  margin-top: 1.8rem;
-  font-size: 1.15rem;
-  font-style: italic;
+/* Responsive adjustments */
+/* Mobile phones <= 600px */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;  /* stack vertically */
+    padding: 1rem;
+    align-items: center;     /* center everything */
+    text-align: center;
+  }
+
+  .header-logo img {
+    height: 8rem;            /* smaller logo */
+    margin-bottom: 1rem;
+  }
+
+  .header-2 {
+    flex-direction: column;  /* stack nav below logo */
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;  /* stack links vertically */
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    margin: 0;               /* no extra margin */
+  }
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .homeSection {
+/* Same vertical stacking with slightly bigger sizes for tablets */
+@media (max-width: 900px) {
+  .header-container {
     flex-direction: column;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-align: center;
   }
-  .leftSide,
-  .rightSide {
-    max-width: 100%;
-    min-width: auto;
+
+  .header-logo img {
+    height: 12rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .header-2 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: row;      /* horizontal nav for tablets */
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+    margin: 0;
   }
 }

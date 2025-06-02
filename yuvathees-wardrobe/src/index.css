@@ -38,9 +38,39 @@ section, div {
   max-width: 100rem; /* Max width for layout consistency */
 }
 
-/* Responsive basics: prevent overflow on small screens */
-@media (max-width: 600px) {
+/* Tablet / Small laptops: Adjust spacing and font sizing */
+@media (max-width: 1024px) {
+  body, html {
+    font-size: 0.95rem; /* Slightly reduce base font size */
+  }
+
   section, div {
-    padding: 1rem; /* Reduce padding on small screens */
+    padding: 1rem 1.5rem; /* Tighter padding */
+  }
+
+  h2 {
+    font-size: 1.3rem; /* Slightly smaller headings */
   }
 }
+
+/* Mobile phones: Tight layout and better readability */
+@media (max-width: 600px) {
+  body, html {
+    font-size: 0.9rem;
+  }
+
+  section, div {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center; /* Optional: center headings for mobile */
+  }
+
+  a {
+    display: inline-block; /* Helpful if links are stacked */
+    word-break: break-word;
+  }
+}
+

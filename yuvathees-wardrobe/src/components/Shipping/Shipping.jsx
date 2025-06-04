@@ -5,11 +5,11 @@ import ShippingCalculator from "./ShippingCalculator";
 import "./Shipping.css";
 
 const Shipping = () => {
-  const [selectedCountry, setSelectedCountry] = useState("");
-  const [weight, setWeight] = useState("");
-  const [isJewelry, setIsJewelry] = useState(false);
-  const [message, setMessage] = useState("");
-  const [validationError, setValidationError] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState(""); // State to track selected country
+  const [weight, setWeight] = useState(""); // State to track weight input
+  const [isJewelry, setIsJewelry] = useState(false); // State to track if jewelry is included
+  const [message, setMessage] = useState(""); // State to hold the shipping message
+  const [validationError, setValidationError] = useState(""); // State to hold validation error messages
 
   const handleCountrySelect = (e) => {
     const selected = e.target.value;
@@ -96,6 +96,8 @@ const Shipping = () => {
             </tr>
           </thead>
           <tbody>
+          {/* Map through shippingData to create table rows */
+            /* Assuming shippingData is an object with country names as keys */}
             {Object.entries(shippingData).map(([country, data]) => (
               <tr key={country}>
                 <td>{country}</td>

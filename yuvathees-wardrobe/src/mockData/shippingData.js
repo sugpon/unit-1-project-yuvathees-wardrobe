@@ -1,7 +1,8 @@
+// This file contains mock data for shipping costs and messages for different countries.
 export const shippingData = {
   India: {
     cost: 0,
-    message: "Shipping is free across India. No additional charges apply.",
+    message: "Shipping is free across India. No additional charges apply.",          
   },
   USA: {
     cost: 999,

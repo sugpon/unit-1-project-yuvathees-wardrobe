@@ -33,7 +33,7 @@ const images = [
 ];
 
 export default function Home() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0); // State to track the current image index
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,6 +50,7 @@ export default function Home() {
     <section className="homeSection">
       <div className="leftSide">
         <div className="slideshowContainer">
+        {/* Slideshow container to hold images */}
           {images.map((src, index) => (
             <img
               key={index}

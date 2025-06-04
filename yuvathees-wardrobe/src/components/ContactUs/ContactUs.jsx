@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./ContactUs.css";
 import Button from "../Button/Button.jsx";
 
 export default function ContactUs() {
-  const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [message, setMessage] = useState(""); // State to hold the message input
+  const [submitted, setSubmitted] = useState(false); // State to track if the form has been submitted
   const maxChars = 200;
 
   // Handle textarea input change
-  const handleMessageChange = (e) => {
+  const handleMessageChange = (e) => { 
     if (e.target.value.length <= maxChars) {
       setMessage(e.target.value);
     }

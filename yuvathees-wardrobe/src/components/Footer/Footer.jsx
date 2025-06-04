@@ -1,5 +1,5 @@
 import './Footer.css';
-import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa'; /* Importing social media icons from react-icons */
 
 function Footer() {
   return (

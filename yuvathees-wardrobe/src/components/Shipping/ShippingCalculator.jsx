@@ -1,6 +1,6 @@
 import Button from "../Button/Button.jsx";
 
-const ShippingCalculator = (props) => {
+const ShippingCalculator = (props) => { // props to handle state and functions from parent component
   return (
     <div className="shipping-calculator">
       <h2>Shipping Calculator</h2>

@@ -1,10 +1,10 @@
-import React from 'react';
 import './AboutUs.css';
 
 const AboutUs = () => {
   return (
     <div className="about-container">
       <section className="about-content">
+      {/* Static content for About Us page */}
         <h2>About Yuvathees Wardrobe</h2>
         
         <p>
